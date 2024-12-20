@@ -11,11 +11,11 @@ def get_advanced_writer(file_name):
                 file.write(str(data) + '\n')
     return write_everything
 
-# Пример использования
-write = get_advanced_writer('simple_data.txt')
-write('Привет, мир!', [1, 2, 3], {'ключ': 'значение'}, 'Просто текст')
+write = get_advanced_writer('example.txt')
+write('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
 
 from random import choice
+
 
 class MysticBall:
     def __init__(self, *words):
@@ -24,10 +24,12 @@ class MysticBall:
     def __call__(self):
         return choice(self.words)
 
+
 first_ball = MysticBall('Да', 'Нет', 'Наверное')
 print(first_ball())
 print(first_ball())
 print(first_ball())
+
 
 
 
