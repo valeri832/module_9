@@ -11,6 +11,10 @@ def get_advanced_writer(file_name):
                 file.write(str(data) + '\n')
     return write_everything
 
+# Пример использования
+write = get_advanced_writer('simple_data.txt')
+write('Привет, мир!', [1, 2, 3], {'ключ': 'значение'}, 'Просто текст')
+
 from random import choice
 
 class MysticBall:
